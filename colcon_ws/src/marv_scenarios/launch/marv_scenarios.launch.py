@@ -104,4 +104,15 @@ def generate_launch_description():
             emulate_tty=True,
             arguments=['--ros-args', '--log-level', logger]
         ),
+
+        launch_ros.actions.Node(
+            package='marv_scenarios',
+            #namespace='',
+            node_executable='remote_network_steering',
+            name='remote_network_steering',
+            parameters = [config_params],
+            output='screen', 
+            emulate_tty=True,
+            arguments=['--ros-args', '--log-level', logger]
+        ),
     ])

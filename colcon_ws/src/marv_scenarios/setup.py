@@ -38,6 +38,8 @@ setup(
             'waypoint_navigation = marv_scenarios.waypoint_navigation:main',
             'thrust_controller_test = marv_scenarios.thrust_controller_test:main',
             'heading_controller_test = marv_scenarios.heading_controller_test:main',
+
+            'remote_network_steering = marv_scenarios.remote_network_steering:main',
 	    ],
     },
 )
